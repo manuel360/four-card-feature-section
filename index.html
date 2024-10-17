@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Four card feature section</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    *{
+      box-sizing: border-box;
+   
+    }
+    body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    height: fit-content;
+    font-size: 15px;
+  
+    }
+    .main{
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: repeat(auto-fill, minmax(auto, 1fr));
+      place-content: center;
+      justify-content: center;
+      align-items: center;
+      gap: 5rem 0;
+      height: fit-content;
+     
+     
+     
+    }
+    .h2{
+      margin-bottom: 2rem;
+    }
+    .col{
+      display: grid;
+      margin: 20px;
+    box-shadow: 0px 5px 10px hsl(180, 11%, 78%);
+      border-radius: 5px 5px 0px 0px;
+      padding: 20px 10px;
+  
+    }
+    .red{
+      border-top:5px solid hsl(0, 78%, 62%);
+      border-radius: 5px;
+
+    }
+    .green{
+      border-top: 5px solid hsl(180, 62%, 55%);
+      border-radius: 5px;
+
+    }
+    .yellow{
+      border-top: 5px solid hsl(34, 97%, 64%);
+      border-radius: 5px;
+    
+    }
+    .blue{
+      border-top:5px solid hsl(212, 86%, 64%);
+    }
+      p,h2{
+        padding: 0 2rem;
+        margin: .2rem 0;
+        line-height: 1.5;
+      }
+
+
+    
+    img{
+      justify-self: end;
+      padding: 1rem 2rem;
+      width: 7rem;
+      align-self: center;
+      margin-top: 2rem;
+    
+    
+    }
+    .card{
+      margin-top: 3rem;
+    }
+  @media (width>900px ){
+    body{
+      padding: 2rem;
+display: grid;
+place-items: center;
+place-content: center;
+min-height: 100vh;
+
+    }
+ 
+
+    .card{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(20rem, 1fr));
+    grid-template-rows: auto;
+
+  }
+  .col>p{
+height: auto;
+width: 80%;
+
+  }
+.yellow{
+  grid-area: 3/2;
+}
+.top{
+  grid-area: 1/2;
+  grid-column: span 3;
+  justify-self: center;
+  text-align: center;
+
+  margin-bottom: 2rem;
+}
+
+.red{
+  grid-area: 2/2;
+}
+.green{
+grid-area: 2/1/span 2;
+align-self: center;
+
+}
+.blue{
+  grid-area: 2/3/span 2;
+  align-self: center;
+}
+}
+.top>h2, .top>p{
+  text-align: center;
+
+}
+    
+.reliable{
+  font-weight: 200;
+}
+.powered{
+  font-weight: 600;
+}
+h2{
+  font-weight: 600;}
+  p{
+    font-weight: 400;
+    color: hsl(0, 1%, 52%) ;
+  }
+
+
+  </style>
+</head>
+<body>
+  
+<div class="main">
+
+
+  
+  <div class="card">
+    
+    <div class="top">
+      <h2> <span class="reliable">Reliable, efficient delivery</span> <br>
+          <span class="powered">Powered by Technology</span> </h2>
+          <p>Our Artificial intelligence powered tools use millions of project <br>data points to ensure that your project is successful</p>
+        </div>
+        
+
+<div class="col green">
+<h2>  Supervisor</h2>
+  <p>Monitors activity to identify project roadblocks</p>
+  <img src="./images/icon-supervisor.svg" alt="">
+ </div>
+
+
+  <div class="col red">
+ <h2>  Team Builder</h2>
+   <p>Scans our talent network to create the optimal team for your project</p>
+   <img src="./images/icon-team-builder.svg" alt="">
+  </div>
+
+ 
+    <div class="col yellow">
+   <h2>   Karma</h2>
+     <p>  Regularly evaluates our talent to ensure quality </p>
+     <img src="./images/icon-karma.svg" alt="">
+    </div>
+  
+    <div class="col blue">
+      <h2>   Calculator</h2>
+        <p> 
+          Uses data from past projects to provide better delivery estimates</p>
+          <img src="./images/icon-calculator.svg" alt="">
+       </div>
+     
+
+ </div>
+
+
+ </div>
+ 
+</body>
+</html>
